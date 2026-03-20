@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои ссылки</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+
+    h1 {
+      margin-bottom: 25px;
+    }
+
+    .link {
+      display: block;
+      background: white;
+      color: #333;
+      text-decoration: none;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .link:hover {
+      transform: scale(1.05);
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://via.placeholder.com/100" class="avatar" alt="avatar">
+    <h1>Твое имя</h1>
+
+    <a class="link" href="https://instagram.com" target="_blank">Instagram</a>
+    <a class="link" href="https://tiktok.com" target="_blank">TikTok</a>
+    <a class="link" href="https://youtube.com" target="_blank">YouTube</a>
+    <a class="link" href="https://t.me" target="_blank">Telegram</a>
+  </div>
+</body>
+</html>
