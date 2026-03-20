@@ -3,60 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мои ссылки</title>
+  <title>LivsLuft</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
+      background: url('bg.png') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
 
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
     .container {
+      position: relative;
+      z-index: 1;
       text-align: center;
       width: 90%;
       max-width: 400px;
     }
 
-    .avatar {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      object-fit: cover;
-      border: 3px solid white;
-    }
-
     h1 {
+      color: white;
       margin-bottom: 25px;
+      font-size: 28px;
+      letter-spacing: 1px;
     }
 
     .link {
       display: block;
-      background: white;
-      color: #333;
+      background: rgba(255,255,255,0.9);
+      color: #1a1a1a;
       text-decoration: none;
-      padding: 15px;
+      padding: 14px;
       margin: 10px 0;
-      border-radius: 12px;
+      border-radius: 10px;
       font-weight: bold;
+      backdrop-filter: blur(5px);
       transition: 0.2s;
     }
 
     .link:hover {
       transform: scale(1.05);
-      background: #f0f0f0;
+      background: white;
+    }
+
+    .logo {
+      width: 80px;
+      margin-bottom: 15px;
+      border-radius: 50%;
     }
   </style>
 </head>
 <body>
+  <div class="overlay"></div>
+
   <div class="container">
-    <img src="https://via.placeholder.com/100" class="avatar" alt="avatar">
-    <h1>Твое имя</h1>
+    <img src="bg.png" class="logo" alt="logo">
+    <h1>LivsLuft</h1>
 
     <a class="link" href="https://instagram.com" target="_blank">Instagram</a>
     <a class="link" href="https://tiktok.com" target="_blank">TikTok</a>
@@ -64,4 +79,3 @@
     <a class="link" href="https://t.me" target="_blank">Telegram</a>
   </div>
 </body>
-</html>
